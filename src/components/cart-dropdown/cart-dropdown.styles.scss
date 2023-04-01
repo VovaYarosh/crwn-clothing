@@ -10,7 +10,7 @@
   top: 90px;
   right: 40px;
   z-index: 5;
-
+  overflow: hidden; /* added overflow hidden to hide scrollbar */
 
   .empty-message {
     font-size: 18px;
@@ -21,11 +21,16 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    display: none;
+    overflow-y: scroll; /* changed to overflow-y to hide only vertical scrollbar /
+padding-right: 15px; / added padding to avoid content being overlapped by scrollbar */
   }
 
   button {
     margin-top: auto;
   }
 }
+
+
+
+
+
